@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BrrrGrrr orderr</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- css stylessheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- Logo display -->
+
+        <div class="header">
+            <div class="logo">
+                <img class="burger-logo" src="burger_logo.png" alt="2">
+            </div>
+        </div>
+
+        <!-- Menu counter -->
+ 
+        <div class="container-1">
+            <div class="menu-frame">
+                <img class="menu-frame-pic" src="frame.png" alt="frame"> 
+            </div>
+            <div class="icon">
+                <img class="icon-img" src="burger_pic.jpg" alt="burger">
+            </div>
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li id="ingre-name1">Patty - </li>
+                    <li id="ingre-name2">Cheese - </li>
+                    <li id="ingre-name3">Tomatoes - </li>
+                    <li id="ingre-name4">Onions - </li>
+                    <li id="ingre-name5">Lettuce - </li>
+                 </ul>
+            </div>
+        </div>
+
+        <!-- Ingredients selection and bill counter -->
+
+        <div class="container-2">
+            <div class="selection">
+                <h3>Choose what goes in your burger</h3>
+                <div class="selection-btns">
+                    <button id="1">Patty</button>
+                    <button id="2">Cheese</button>
+                    <button id="3">Tomatoes</button>
+                    <button id="4">Onions</button>
+                    <button id="5">Lettuce</button>
+                </div>
+            </div>
+            <div class="billing">
+                <p style="color: #E2E2E2;">Current Order Total: </p>
+                <h2 id="price">INR 0</h2>
+                <p style="color: #E2E2E2;">To Pay</p>
+                <div class="btn-holder">
+                    <button onclick="alertfunc()">Pay and receive order</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

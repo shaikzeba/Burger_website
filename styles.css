@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* Logo dissplay section */
+
+.header {
+    height: 15rem;
+    background-image: url('curtain.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.burger-logo {
+    width: 17vw;
+    border: 5px solid #e18229;
+    border-radius: 250px;
+    margin-top: 25px;
+}
+
+/* Menu display section */
+
+.container-1 {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-frame {
+    width: 16rem;
+    height: 16rem;
+    margin: 60px 70px;
+    order: 10;
+}
+
+.menu-frame-pic {
+    height: 100%;
+    width: 100%;
+}
+
+.icon {
+    width: 7rem;
+    height: 7rem;
+    align-self: end;
+    margin-left: 25rem;
+
+}
+
+.icon-img {
+    height: 100%;
+    width: 100%;
+}
+
+.ingredients {
+    background-image: url('ingredients.png');
+    background-size: cover;
+    width: 150px;
+    padding: 2px 5px;
+    font-family: 'Ubuntu',sans-serif;
+    align-self: end;
+}
+
+ul {
+    list-style-type: none;
+    padding: 3px 0;
+    text-align: left;
+}
+
+ul li:before {
+    content: '✓ ';
+    color:darkgreen;
+    font-weight: 800;
+  }
+
+
+  /* Ingredients selection */
+
+.container-2 {
+    width: 100%;
+    height: 15rem;
+    margin: 10px 0;
+    background-image: url('bg_2.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selection {
+    background-color: white;
+    height: 6rem;
+    width: 45rem;
+    padding: 10px 15px;
+}
+
+.selection h3 {
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 700;
+    padding: 5px 0 15px 5px;
+}
+
+.selection button {
+    border: none;
+    background-color: #e18229;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin: 0 5px;
+}
+
+.selection button:hover {
+    background-color: #CE7828;
+    cursor: pointer;
+}
+
+/* Billing counter */
+
+.billing {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    width: 35rem;
+    border: 10px solid white;
+    border-top: 0;
+    padding: 20px 0 0 15px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+.billing button {
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    background-color: #F04B40;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.billing button:hover {
+    background-color: rgb(233, 146, 138);
+}
+
+.billing .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+@media (max-width: 900px){
+    .header {
+        height: 150px;
+    }
+
+    .burger-logo {
+        width: 28vw;
+    }
+
+    .container-1 {
+        height: 38rem;
+        background-image: url('bg1.jpeg');
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .menu-frame {
+    order: 0;
+    flex: 1 0 100%;
+    margin: 100px 0 0 0;
+    height: 20rem;
+    }
+
+    .menu-frame-pic {
+        width: 50%;
+        margin-left: 150px;
+    }
+
+    .icon {
+        margin: 0;
+    }
+
+    .container-2 {
+        height: 25rem;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .selection {
+        height: 10rem;
+    }
+
+    .selection h3 {
+        padding: 5px;
+    }
+
+    .selection-btns {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px 30px;
+        justify-content: center;
+    }
+
+    .selection button {
+        margin: 5px 10px;
+    }
+
+    .billing {
+        border: 10px solid white;
+    }
+
+}
